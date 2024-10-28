@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+}
+
+#left {
+    position: relative;
+    width: 50vw; /* Half of the viewport width */
+    height: 100vh; /* Full viewport height */
+    font-family: "Roboto", sans-serif;
+}
+
+#left .background {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    object-fit: cover; /* Makes sure the image covers the container */
+}
+
+.legend {
+    position: absolute;
+    bottom: 20px; /* Position at the bottom of the container */
+    left: 50%; /* Centers horizontally */
+    transform: translateX(-50%); /* Centers horizontally */
+    color: white; /* Text color */
+    font-size: 1.2rem; /* Font size for caption */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 10px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center;
+    font: inherit;
+}
+
+#logo {
+    position: absolute;
+    top: 50%; /* Centers vertically */
+    left: 50%; /* Centers horizontally */
+    transform: translate(-50%, -50%); /* Centers both horizontally and vertically */
+    width: 100%; /* Width of the horizontal bar */
+    height: 80px; /* Height of the bar */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 100px; /* Set a fixed width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1; /* Ensure logo appears on top of the bar */
+}
+
+#logo p {
+    color: white;
+    font-size: 2rem;
+    margin-left: 2vw;
+    font-weight: bold;
+}
+
+#legend {
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#right {
+    flex: 1;
+    height: 100vh;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+}
+
+#top {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #ffffe0;
+}
+
+#under {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #ffffe0;
+}
+
+form {
+    height: 50%;
+    padding: 20px;
+}
+
+input, label {
+    display:block;
+}
+
+input {
+    padding: 3px;
+}
+
+section {
+    height: 29%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5vw;
+}
+
+.first {
+    float:left;
+    margin-right: 20px;
+}
+
+
+.btn {
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    height: 5vh;
+    width: 10vw;
+    padding: 0.2rem;
+    font: inherit;
+    background-color: #ff8c00;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+button:hover {
+    color: #ff8c00;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#bottom {
+    height: 20%;
+    display: flex;
+    align-items: top;
+    padding: 20px;
+    background-color: #ffffe0;
+}
+
+a {
+    text-decoration: none;
+    color: #ff8c00;
+}
+
+a:hover {
+    color: brown;
+}
